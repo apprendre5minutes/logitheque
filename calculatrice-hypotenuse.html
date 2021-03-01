@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Calculatrice hypoténuse</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Calculatrice hypoténuse. Calcul de l'hypoténuse d'un triangle rectangle facile avec notre calculatrice dédiée." />
+		<meta name="keywords" content="calculatrice, calcul, en ligne, hypotenuse,théorème de pythagore">
+                                    <meta name="author" content="Francis FABIEN" />
+
+		<!-- Facebook Open Graph -->
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="Calculatrice hypoténuse" />
+		<meta property="og:description" content="Calculatrice hypoténuse. Calcul de l'hypoténuse d'un triangle rectangle facile avec notre calculatrice dédiée."/>
+		<meta property="og:url" content="https://github.com/apprendre5minutes/logitheque/calculatrice-hypotenuse.html" />
+		<meta property="og:image" content="https://github.com/apprendre5minutes/logitheque/images/icone-apprendre5minutes.png"/>
+		<meta property="og:site_name" content="Logithèque apprendre 5 minutes" />
+		<meta property="og:locale" content="fr_FR" />
+
+                                    <link rel="icon" type="image/png" sizes="16x16" href="images/icone-apprendre5minutes.png">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="assets/css/apprendre5minutes.css" />
+		
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Logiciels<br /><br />
+						éducatifs</h1>
+						<p>Logiciels en ligne et 100% gratuits du site éducatif <a href="https://apprendre5minutes.wordpress.com" target="_blank">Apprendre5minutes</a></p>
+					</div>
+
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Logithèque</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Logiciels</a></li>
+							<li class="active"><a href="calculatrice-hypotenuse.html">Calculatrice hypoténuse</a></li>
+							<li><a href="https://apprendre5minutes.wordpress.com" target="_blank">Apprendre</a></li>
+						</ul>
+
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Calculatrice hypoténuse</h1>
+									<p>Calculez l'hypoténuse facilement grâce à notre calculatrice dédiée.</p>
+								</header>
+								<div class="image main"><img class="box" src="images/calculatrice-hypotenuse.png" alt="Calculatrice Hypoténuse pour calculer facilement l'hypoténuse du triangle rectangle" title="Calcul de la longueur de l'hypoténuse - théorème de Pythagore" /></div>
+								<p id="highlight">Renseignez les deux longueurs <b><em>A</em></b> et <b><em>B</em></b>, puis cliquez sur le bouton <b><em>CALCULER</em></b> pour afficher l'hypoténuse.</p>
+								<div class="field">
+									<label for="a-cote-oppose">A = longueur du côté opposé</label>
+									<input type="number" class="cote-triangle" name="a-cote-oppose" id="a-cote-oppose" min="0"  />
+								</div>
+								<div class="field">
+									<label for="b-cote-adjacant">B = longueur du côté adjaçant</label>
+									<input type="number" class="cote-triangle" name="b-cote-adjacant" id="b-cote-adjacant" min="0"  />
+								</div>
+								<div class="field">
+									<label for="c-hypotenuse">C = longueur de l'hypoténuse</label>
+									<input type="number" name="c-hypotenuse" id="c-hypotenuse" disabled="disabled"  />
+								</div>
+								<div class="field">
+									<button type="button" id="compute" onclick="fnCalculHypotenuse();">Calculer</button>
+								</div>
+								<hr />
+								<p><b>Avec cette calculatrice d'hypoténuse, vous trouverez rapidement le côté le plus long d'un triangle rectangle.</b></p>
+								<p>Si vous voulez savoir ce qu'est l'hypoténuse d'un triangle rectangle, comment la trouver et quelle est la formule de l'hypoténuse d'un triangle, vous trouverez la réponse ci-dessous.</p>
+								<p>N'attendez plus, essayez cette calculatrice de l'hypoténuse !</p>
+
+								<h2>Qu'est-ce que l'hypoténuse d'un triangle rectangle.</h2>
+								<p>L'hypoténuse est le côté le plus long d'un triangle rectangle.</p>
+								<p>C'est le côté opposé à l'angle droit (90°).</p>
+								<p>La longueur de l'hypoténuse peut être trouvée, par exemple, grâce au théorème de Pythagore.</p>
+								<h2>Formule de calcul de l'hypoténuse d'un triangle rectangle.</h2>
+								<p>La longueur de l'hypoténuse peut être calculée à partir de plusieurs formules.</p>
+								<p>Si vous connaissez les longueurs des deux côtés de l'angle droit, vous pouvez utiliser le <b>théorème de Pythagore</b> pour calculer l'hypoténuse.</p>
+								<p>Prenez la racine carrée de la somme des deux côtés <em>a</em> et <em>b</em> de l'angle droit pour trouver la longueur de l'hypoténuse.</p>
+								<p id="highlight"><b>c = √(a² + b²)</b></p>
+								<h2>💡Plus d'informations sur le calcul de l'hypothénuse.</h2>
+								<p>Si vous voulez en apprendre plus sur l'hypoténuse, cliquez sur le lien ci-dessous pour lire l'article détaillé.</p>
+								<ul class="actions special">
+									<li><a href="https://apprendre5minutes.wordpress.com/2021/02/21/calcul-hypotenuse-theoreme-pythagore/" target="_blank" class="button large">Calculer l’Hypoténuse facilement</a></li>
+								</ul>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; <a href="https://apprendre5minutes.wordpress.com" target="_blank">Apprendre5minutes</a></li><li>Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/apprendre5minutes.js"></script>
+
+	</body>
+</html>

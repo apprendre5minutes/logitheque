@@ -1,0 +1,13 @@
+body {
+	background-color : #F68C00;
+}
+
+#highlight {
+	background : rgba(220, 220, 220, 0.25);
+	font-size : 1.25em;
+	text-align : center;
+}
+
+#compute {
+	margin-top: 1em;
+}
